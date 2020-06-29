@@ -7,6 +7,7 @@
 }
 body{
   font-family: 'Lato', sans-serif;
+  overflow-x:hidden;
 }
 
 /*content 1 */
@@ -118,13 +119,41 @@ body{
   top:13%;
 }
 
+@media only screen and (min-width:770px){
+  .texts .num{
+    color: #33A97E;
+    font-size:15px;
+    font-weight:bold;
+    
+  }
+  .texts .year{
+    color: #1F2430;
+    font-weight:300;
+    font-size:11px;
+  }
+  .texts h3{
+    color: #1F2430;
+    font-weight:200;
+}
+.ministry h4{
+  font-size: 16px;
+}
+.circle{
+  top:15%;
+  left:99%;
+}
+.vector{
+  top:10%;
+}
+}
+
 @media only screen and (min-width:800px){
   .circle{
     top:15%;
     left:99%;
   }
   .vector{
-    top:4%;
+    top:10%;
   }
 }
 @media only screen and (min-width:999px){
