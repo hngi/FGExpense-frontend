@@ -1,0 +1,130 @@
+body {
+    background-color: #e5e5e5;
+  }
+  
+  .card-body {
+      background-color: #e5e5e5;
+  }
+  
+  .list-headings {
+    display: flex;
+  }
+  
+  .list-headings li {
+    color: #00945e;
+    margin-right: 10px;
+    list-style-type: none;
+  }
+  
+  .julius {
+    display: flex;
+  }
+  
+  .tobias {
+      font-size: 12px;
+  }
+  
+  .julius p {
+    font-family: Lato;
+    font-style: normal;
+    font-size: 29px;
+  }
+  
+  .julius img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  
+  .container .first .step img {
+      width: 250px;
+      height: 250px
+  
+  }
+  
+  .container .first .step {
+      margin-top: 40px;
+  }
+  
+  .container .first .step h6{
+     margin: 0 auto;  
+     width: 100%;
+     
+            
+  }
+  
+  @media screen and (max-width: 768px) {
+      .container .first .step {
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+           
+        }
+      .julius {
+          display: flex;
+          justify-content: center;
+      }
+  
+      .headings {
+      margin: 0 auto;
+      display: block;
+      width: 89%
+  
+      }
+      .company{
+        margin: 0 auto;
+        display: block;
+        width: 80%
+  
+      }
+      .awards {
+          
+        margin: 0 auto;
+        display: block;
+        width: 85%
+      }
+  
+      .container .first .step h6{
+          text-align: center;
+      }
+  }
+  
+  @media screen and (max-width: 500px) {
+        .container .first .step {
+           margin-top: 40px;
+            display: block;
+            width: 80%;
+           
+        }
+  
+        .list-headings li {
+          
+          font-size: 13px;
+        }
+  
+        .julius {
+            display: flex;
+            justify-content: center;
+        }
+  
+        /* .headings {
+       display: flex;
+          justify-content: center;
+  
+        }  */
+  
+        .company{
+          margin: 0 auto;
+          display: block;
+          width: 60%
+    
+        }
+        .awards {
+          
+          margin: 0 auto;
+          display: block;
+          width: 85%
+        }
+      
+  
+  }
