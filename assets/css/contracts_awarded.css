@@ -107,23 +107,17 @@ body {
             justify-content: center;
         }
   
-        /* .headings {
-       display: flex;
-          justify-content: center;
-  
-        }  */
-  
         .company{
           margin: 0 auto;
           display: block;
-          width: 60%
+          width: 90%
     
         }
         .awards {
           
           margin: 0 auto;
           display: block;
-          width: 85%
+          width: 95%
         }
       
   
