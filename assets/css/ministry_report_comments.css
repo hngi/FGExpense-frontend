@@ -119,4 +119,7 @@ span > p{
     .gone{
         display: none;
     }
+    .fa-ellipsis-h{
+        display: none;
+    }
 }
