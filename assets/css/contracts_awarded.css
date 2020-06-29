@@ -1,0 +1,90 @@
+.navbar{
+    padding: 0.5rem 2rem;
+}
+.nav-link{
+    font-weight: 600;
+}
+.hero-link{
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-transform: uppercase; 
+    color: #00945E;
+    padding-left: 1rem;
+}
+.hero-link::before{
+    content: '.';
+    font-size: 1.8rem;
+    color: #00945E;
+    padding-right: .5rem;
+    border-radius: 50%;
+}
+.julius-berger h1{
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #323E48;
+}
+#bergerLogo{
+   width: 5rem;
+   height: 5rem;
+   margin-bottom: 2rem;
+}
+.contract-info span{
+    font-size: 1.1rem;
+    line-height: 22px;
+    font-weight: 500;
+}
+span.email {
+    color: #6765EC;
+    font-size: 1.5rem;
+}
+span.figure{
+    color: #00945E;
+}
+span.smallText{
+    font-size: 13px;
+    line-height: 16px;
+    color: #1F2430;
+}
+a.task{
+    color: #A1A3A8;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    margin: 0 1rem;
+    border-bottom: 2px solid #D5D9D8;
+}
+.director{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+.directorImg{
+    background: #E5E5E5;
+}
+.directorName{
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #353A45;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight:bold;
+}
+.directorTitle{
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    color: #005D3B;
+}
+.socials a{
+    font-size: 1.5rem;
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0 0.5rem;
+    color: #000;
+}
+footer{
+    background: #323E48;
+}
