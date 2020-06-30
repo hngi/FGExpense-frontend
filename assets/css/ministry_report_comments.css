@@ -45,7 +45,8 @@ p{
 .green-text,
 li.active > a,
 .far:hover,
-.far:focus{
+.far:focus,
+.fas:hover{
     color: #00945e !important;
 }
 
@@ -106,9 +107,12 @@ span > p{
     margin-top: .25rem;
 }
 
-/* .icons{
-
-} */
+.fa-laugh,
+.fa-image{
+    margin-left: -4rem;
+    margin-top: .9rem;
+    margin-right: 5rem;
+}
 
 @media (max-width: 768px){
     .paragraph{
