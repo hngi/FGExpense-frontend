@@ -52,6 +52,15 @@ body {
      
             
   }
+  .list-inline li a {
+    text-decoration: none;
+  }
+
+  .list-inline li a{
+    font-size: 18px;
+  }
+
+ 
   
   @media screen and (max-width: 768px) {
       .container .first .step {
@@ -60,30 +69,33 @@ body {
             text-align: center;
            
         }
+
       .julius {
-          display: flex;
-          justify-content: center;
+          width: 90%
       }
   
       .headings {
       margin: 0 auto;
       display: block;
-      width: 89%
+      width: 90%
   
       }
+
       .company{
         margin: 0 auto;
         display: block;
-        width: 80%
+        width: 90%
   
       }
-      .awards {
-          
-        margin: 0 auto;
-        display: block;
-        width: 85%
+      .list-inline {
+        margin-left: 17px;
       }
+
+     .list-inline li a{
+    font-size: 13px;
   
+  }
+    
       .container .first .step h6{
           text-align: center;
       }
@@ -102,11 +114,6 @@ body {
           font-size: 13px;
         }
   
-        .julius {
-            display: flex;
-            justify-content: center;
-        }
-  
         .company{
           margin: 0 auto;
           display: block;
@@ -118,6 +125,10 @@ body {
           margin: 0 auto;
           display: block;
           width: 95%
+        }
+
+        .list-inline li a{
+          font-size: 13px;
         }
       
   
