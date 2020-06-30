@@ -2,15 +2,7 @@
 
 ### Figma Links
 
-1. Home page - https://www.figma.com/file/wpP7QONgpBjv2mRiXGAqrX/Homepage?node-id=0%3A1
-
-2. Expense Reports - https://www.figma.com/file/jirgellPIY6W1qFfpKG24d/Contact-us?node-id=0%3A1
-
-3. Ministry List - https://www.figma.com/file/qPuC4Whqz82RYp19WK1KPb/ministry-profile
-
-4. Contracts Awarded - https://www.figma.com/file/ltmzM4gelPtbtb2YQ5BIFS/company-profile?node-id=0%3A1
-
-5. Ministry Report - https://www.figma.com/file/EeFfyhZx0IaQ8mJchH2MwB/about-us-expense?node-id=0%3A1
+General Figma board -https://www.figma.com/file/MYsGV8NXtefVNUkrvdAhQX/ExpenseNG-Official?node-id=6%3A3568
 
 
 ### Contribution guide
@@ -19,17 +11,18 @@
 2. Clone the forked repo to your computer
 3. Set the parent repo as upstream - ```git remote add upstream https://github.com/hngi/FGExpense-frontend
 4. Create a new branch for your task - ```git checkout -b task-name-here```
-5. Write your codes, add your files in the correct locations
-6. Stage files for commit - ```git add .```
-7. Commit changes - ```git commit -m 'commit message here'```
-8. Pull latest state from upstream - ```git pull upstream master```
-9. Push changes to your new branch - ```git push origin branch-name-here```
-10. Head to your forked repository and create a pull request
+5. Pull latest state from upstream - ```git pull upstream develop```
+6. Write your codes, add your files in the correct locations
+7. Stage files for commit - ```git add .```
+8. Commit changes - ```git commit -m 'commit message here'```
+9. Pull latest state from upstream again - ```git pull upstream develop```
+10. Push changes to your new branch - ```git push origin branch-name-here```
+11. Head to your forked repository and create a pull request
 
 ### Rules and guides
 
-1. Only two people per page
+1. Only one person per page
 2. The pages must be 100% responsive
-3. Stick to the design and don't replace UI
+3. Stick to the design and don't replace UI, if there is no design for your page, be creative.
 4. You are to host a netlify or github page of what you did and attach when sending a PR
 5. Your PR must be aproved before your task is considered completed
