@@ -121,7 +121,7 @@ span > p{
         display: none;
     }
     .fa-ellipsis-h{
-        display: none;
+        font-size: 1.5rem;
     }
 }
 
