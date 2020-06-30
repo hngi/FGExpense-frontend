@@ -36,41 +36,6 @@ a {
   background: rgba(0, 148, 94, 0.82);
 }
 
-/* Header and Footer */
-.nav-link{
-	color: black !important;
-}
-.nav-link:hover{
-	color: grey !important;
-}
-.my-footer ul {
-  list-style-type: none;
-  padding-left: 0;
-  color: white;
-}.my-footer a {
-  color: #fff !important;
-}
-.my-footer {
-  background-color: #323E48 !important;
-}
-h6{
-	color: white;
-	margin-top: 25px;
-}
-.fa-search{
-	color: grey !important;
-}
-.fa-search:hover{
-	color: black !important;
-}
-.ft{
-	margin-top: 25px;
-}
-.lower{
-	background-color: #1F2430;
-	padding: 10px;
-}
-
 /* Navigation Links */
 .navigation-links ul {
   list-style-type: none;
