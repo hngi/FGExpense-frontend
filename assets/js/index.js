@@ -1,13 +1,14 @@
-var arrowLeft=$("#arrow-left");
-var arrowRight=$("#arrow-right");
+var arrowLeft=$(".arrow-left");
+var arrowRight=$(".arrow-right");
 var card=$(".card");
+var slide=0;
 
 arrowLeft.click(function(e){
-    card.removeClass("slide-right");
-    card.addClass("slide-left");
+    slide-=90;
+    card.css("transform","translateX("+slide+"%)");
 });
 
 arrowRight.click(function(e){
-    card.removeClass("slide-left");
-    card.addClass("slide-right");
+    slide+=90;
+    card.css("transform","translateX("+slide+"%)");
 });

@@ -19,9 +19,9 @@
 
    <!-- banner -->
     <div class="banner">
-         <div class="carets">
-            <img src="assets/images/angle-left.svg" alt="" id="arrow-left">
-            <img src="assets/images/angle-right.svg" alt="" id="arrow-right">
+         <div class="carets" id="caret">
+            <img src="assets/images/angle-left.svg" alt="" class="arrow-left">
+            <img src="assets/images/angle-right.svg" alt="" class="arrow-right">
          </div>
          <div class="target">
               <div class="summary">
@@ -29,12 +29,32 @@
                    <p>ExpenseNG tracks federal spending to ensure taxpayers can see how their money is being used in communities across Nigeria.
                    Learn more on how this money was spent with tools to help you navigate spending from top to bottom.</p>
                </div>
+               <div class="carets my-4" id="caret-alt">
+                <img src="assets/images/angle-left.svg" alt="" class="arrow-left">
+                <img src="assets/images/angle-right.svg" alt="" class="arrow-right">
+               </div>
                <div class="gallery">
                   <div class="card1 card">
-                    <p>New</p>
+                    <p class="tag">New</p>
+                    <div class="project">
+                       <p>Contruction of Lagos-Ibadan Express road <br>
+                          Ministry of Power, Works and Housing</p>
+                       <div class="d-flex justify-content-between mt-4 align-items-center">
+                           <p>Cost of Project: </p>
+                           <p id="cost">#20bn</p>
+                       </div>
+                    </div>
                   </div>
                   <div class="card2 card">
-                    <p>New</p>
+                    <p class="tag">New</p>
+                    <div class="project">
+                      <p>Contruction of Lagos-Ibadan Express road <br>
+                        Ministry of Power, Works and Housing</p>
+                      <div class="d-flex justify-content-between mt-4">
+                          <p>Cost of Project: </p>
+                          <p id="cost">#20bn</p>
+                      </div>
+                   </div>
                   </div>
                </div>
          </div>
@@ -99,7 +119,7 @@
                    <p class="exp-card2">#123,446,332</p>
                    <p class="exp-card3">2020</p>
                  </div>
-                 <a href="#">View Expenditure Report</a>
+                 <a href="#" class="mt-4 mb-5">View Expenditure Report</a>
              </div>
         </div>
 
@@ -126,34 +146,34 @@
                     </div>
                   </div>
                   <div class="stat-b">
-                    <div class="d-flex p-4 justify-content-between">
+                    <div class="d-flex p-2 justify-content-between">
                       <div class="graph-cont">
                         <img src="assets/images/vector 3.svg" alt="graph">
                         <img src="assets/images/vector 2.png" alt="graph">
                        </div>
-                    <div>
+                    <div class="ml-5">
                       <p class="exp-card1">Total amount Spent</p>
                       <p class="exp-card2">#123,446,332</p>
                       <p class="exp-card3">2020</p>
                     </div>
                     </div>
-                    <div class="divide p-4 d-flex justify-content-between">
+                    <div class="divide p-2 d-flex justify-content-between">
                       <div class="graph-cont">
                         <img src="assets/images/vector 3.svg" alt="graph">
                         <img src="assets/images/vector 2.png" alt="graph">
                        </div>
-                      <div>
+                      <div class="ml-5">
                         <p class="exp-card1">Total amount Spent</p>
                         <p class="exp-card2">#123,446,332</p>
                         <p class="exp-card3">2020</p>
                       </div>
                     </div>
-                    <div class="d-flex p-4 justify-content-between">
+                    <div class="d-flex p-2 justify-content-between">
                       <div class="graph-cont">
                         <img src="assets/images/vector 3.svg" alt="graph">
                         <img src="assets/images/vector 2.png" alt="graph">
                        </div>
-                    <div>
+                    <div class="ml-5">
                       <p class="exp-card1">Total amount Spent</p>
                       <p class="exp-card2">#123,446,332</p>
                       <p class="exp-card3">2020</p>
@@ -179,7 +199,7 @@
                     <img src="assets/images/vector 3.svg" alt="graph">
                     <img src="assets/images/vector 2.png" alt="graph">
                    </div>
-                   <div>
+                   <div class="ml-5">
                       <p class="exp-card1">Total amount Awarded</p>
                       <p class="exp-card2">#123,446,332</p>
                       <p class="exp-card3">2019</p>
@@ -213,7 +233,7 @@
                   <img src="assets/images/vector 3.svg" alt="graph">
                   <img src="assets/images/vector 2.png" alt="graph">
                  </div>
-                <div>
+                <div class="ml-5">
                    <p class="exp-card1">Total amount Awarded</p>
                    <p class="exp-card2">#123,446,332</p>
                    <p class="exp-card3">2019</p>
@@ -247,7 +267,7 @@
                   <img src="assets/images/vector 3.svg" alt="graph">
                   <img src="assets/images/vector 2.png" alt="graph">
                  </div>
-                <div>
+                <div class="ml-5">
                    <p class="exp-card1">Total amount Awarded</p>
                    <p class="exp-card2">#123,446,332</p>
                    <p class="exp-card3">2019</p>
