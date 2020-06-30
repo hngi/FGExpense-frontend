@@ -14,10 +14,15 @@ body {
     color: #00945e;
     margin-right: 10px;
     list-style-type: none;
+   
   }
   
   .julius {
     display: flex;
+  }
+
+  .company h5{
+    font-size: 20px
   }
   
   .tobias {
@@ -27,7 +32,7 @@ body {
   .julius p {
     font-family: Lato;
     font-style: normal;
-    font-size: 29px;
+    font-size: 35px;
   }
   
   .julius img {
@@ -91,8 +96,8 @@ body {
         margin-left: 17px;
       }
 
-     .list-inline li a{
-    font-size: 13px;
+     .list-inline li {
+    font-size: 18px;
   
   }
     
