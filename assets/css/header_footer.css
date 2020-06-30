@@ -1,5 +1,5 @@
 .nav-link{
-	color: black !important;
+	color: black;
 }
 .nav-link:hover{
 	color: grey !important;
@@ -30,5 +30,4 @@ h6{
 .lower{
 	background-color: #1F2430;
 	padding: 10px;
-	background: 
 }
