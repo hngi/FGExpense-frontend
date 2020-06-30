@@ -4,7 +4,7 @@
 }
 
 .banner{
-    background: linear-gradient(0deg, rgba(50, 62, 72, 0.4), rgba(50, 62, 72, 0.4)), linear-gradient(0deg, rgba(0, 148, 94, 0.32), rgba(0, 148, 94, 0.32)), url(../images/image\ 1.jpg);
+    background: linear-gradient(0deg, rgba(50, 62, 72, 0.4), rgba(50, 62, 72, 0.4)), linear-gradient(0deg, rgba(0, 148, 94, 0.32), rgba(0, 148, 94, 0.32)), url(../images/flag.jpg);
     height: 90%;
     padding: 1rem 0rem 1rem 2rem;
     color: white;
@@ -12,7 +12,6 @@
 }
 .target{
     margin-top: 3rem;
-    
 }
 .carets{
     display: flex;
@@ -25,6 +24,12 @@
 }
 .carets img:nth-child(1){
     margin-right: 2rem;
+}
+.slide-left{
+   transform: translateX(-90%);
+}
+.slide-right{
+   transform: translateX(0%);
 }
 .summary{
     margin-right: 4rem;
@@ -43,7 +48,7 @@
     display: flex;
     position: relative;
     height:380px;
-    overflow: hidden;
+    overflow-x: hidden;
 } 
 .gallery p{
     padding: 0.3rem 1rem;
@@ -51,7 +56,7 @@
     background-color: white;
     font-weight: 700;
     align-self: flex-start;
-    position: relative;
+    position: absolute;
     left: 10%;
     top: -3%;
     z-index: 23;
@@ -62,11 +67,8 @@
     width: 70%;
     height: 100%;
     border: white 0.7px solid;
-    overflow-y: visible;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    background-color: linear-gradient(180deg, rgba(0, 0, 0, 0) 52.6%, rgba(0, 0, 0, 0.8) 72.92%);
-
+    transition: ease-in-out all 0.5s;
+  
 }
 .card1{
     background-image: url(../images/card2.jpg);
@@ -86,7 +88,7 @@
     border-radius: 100%;
     z-index: 777;
     position: relative;
-    top: 3.3rem;
+    top: 3.6rem;
 }
 
 p.label{
@@ -110,18 +112,23 @@ div.expenses{
 }
 .exp-card{
     width: 100%;
-    height: 200px;
     margin-bottom: 3rem;
-    height: 250px;
-    background-color: linear-gradient(180deg, rgba(0, 148, 94, 0.16) -3.07%, rgba(0, 148, 94, 0) 74.23%);
+
     padding: 1.1rem;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04);
 }
 
-.exp-card img{
-   width: 100%;
-   height: 45%;
+ div.graph-cont{
+   position: relative;
+  
 }
+div.graph-cont img{
+    width: 100%;
+}
+div.graph-cont img:nth-child(1){
+    position: absolute;
+}
+
 
 p.exp-card1{
      font-size: 1rem;
@@ -181,17 +188,11 @@ p.profile{
     flex-direction: column;
     justify-content: space-between;
 }
-.stat-a img{
-    height: 60%;
-    width: 100%;
-}
+
 .stat-b{
     width: 100%;
 }
-.stat-b img{
-    width: 45%;
-    margin-right: 2rem;
-}
+
 .divide{
   border-top: 1px solid gray;
   border-bottom:1px solid gray ;
@@ -241,10 +242,6 @@ p.profile{
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
-}
-.awarded img{
-    width: 40%;
-    height: auto;
 }
 .profile p:nth-child(1){
     font-size: .9rem;
@@ -391,6 +388,13 @@ p.profile{
     .ministry-stat{
         flex-direction: row;
     }
+    
+    .tweet{
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1020px) {
     .comp-card{
         flex-direction: row;
         justify-content: space-between;
@@ -402,10 +406,7 @@ p.profile{
       flex-direction: column;
       justify-content: space-between;
      }
-    .awarded img{
-      width: 100%;
-      height: 70%;
-    }
+   
     .companies .comp-card:nth-child(even){
         margin: 0rem 0rem;
     }
@@ -415,10 +416,6 @@ p.profile{
     .companies .comp-card:nth-child(3){
         margin-top: 2%;
     }
-    .tweet{
-        width: 25%;
-    }
 }
-
 
    
