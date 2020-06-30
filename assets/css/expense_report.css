@@ -1,0 +1,83 @@
+/* Expense Report Table Table  */
+tr>td:nth-child(2) {
+    border-left: 1px solid #dee2e6;
+}
+
+thead>tr>th:nth-child(2) {
+    border-left: 1px solid #dee2e6;
+
+}
+
+tr:nth-of-type(even) {
+    background: #F2FAF7
+}
+
+.btn-filter {
+    min-width: 149px;
+    color: white;
+    height: 45px;
+    background: #00945E;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.btn-filter:hover {
+    color: white;
+}
+
+.dropdown-toggle::after {
+    content: '';
+    display: none;
+}
+
+.text-end {
+    text-align: end
+}
+
+.table-responsive-5::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+.table-responsive::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #00945E;
+}
+
+.pagination>li>a {
+    color: #00945E;
+}
+
+.paginatoion>li>a:hover {
+    background: #00945E;
+}
+
+.table-bordered thead th {
+    border-color: #00945E;
+}
+
+.table-bordered thead th:first-child {
+    background: #00945E;
+    color: white
+}
+
+.table-bordered td,
+.table-bordered th {
+    border-color: #00945E;
+}
+
+.table-bordered tbody tr th {
+    color: #00945E;
+}
+
+.table-notbordered tbody tr th {
+    color: #00945E;
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+/* End Expense Report Table */
