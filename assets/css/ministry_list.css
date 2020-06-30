@@ -46,7 +46,7 @@ body{
   margin:1rem 0;
 }
 .main-header p{
-  font-size:24px;
+  font-size:20px;
 }
 /*content-2 */
 
@@ -61,6 +61,7 @@ body{
   cursor:pointer;
   padding:0 2rem;
   color:#00945E;
+  font-weight:bold;
 }
 
 .money-spent .paragraph:before{
@@ -153,6 +154,11 @@ body{
 }
 }
 
+@media only screen and (min-width:550px){
+  .money-spent .paragraph:before{
+    width:60%;
+  }
+}
 @media only screen and (min-width:800px){
   .circle{
     top:15%;
@@ -166,6 +172,9 @@ body{
   .vector{
     top:7%;
   }
+  .money-spent .paragraph:before{
+    width:50%;
+  }
 }
 @media only screen and (max-width:850px){
   .sec-card .col{
@@ -175,6 +184,15 @@ body{
 @media only screen and (max-width:500px){
   .sec-card .col{
     flex:100%;
+  }
+  .main-header p{
+    font-size:14px;
+  }
+  .money-spent .paragraph:before{
+    width:100%;
+  }
+  .cont-1{
+    width:90%;
   }
 }
 
@@ -190,7 +208,7 @@ body{
 }
 @media only screen and (max-width:400px){
   .main-header p{
-    font-size:17px;
+    font-size:14px;
   }
   .content-1 .circle-1{
     width:8px;
@@ -204,4 +222,5 @@ body{
     font-size:14px;
     
   }
+  
 }
