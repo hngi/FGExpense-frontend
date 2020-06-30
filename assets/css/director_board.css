@@ -1,4 +1,4 @@
-body{
+/* body{
     overflow-x: hidden;
 }
 .nav-link{
@@ -33,7 +33,7 @@ h6{
 .lower{
 	background-color: #1F2430;
 	padding: 10px;
-}
+} */
 .hero-link{
     font-weight: bold;
     font-size: 20px;
@@ -84,6 +84,7 @@ h6{
 .company-info,
 .board-intro{
     padding-left: 2.5rem;
+    padding-right: 2rem;
 }
 .board-intro{
     border-bottom: 1px solid #d5d9d8;
