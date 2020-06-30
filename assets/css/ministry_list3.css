@@ -255,10 +255,10 @@ footer{
         height: 1400px;
     }
     .nav{
-        text-align: center;
+        justify-content: center;
     }
     .nav-link{
-        font-size: 15px;
+        font-size: 13px;
     }
     h2{
         font-size: 18px;
