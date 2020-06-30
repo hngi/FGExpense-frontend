@@ -25,3 +25,11 @@
 8. Pull latest state from upstream - ```git pull upstream master```
 9. Push changes to your new branch - ```git push origin branch-name-here```
 10. Head to your forked repository and create a pull request
+
+### Rules and guides
+
+1. Only two people per page
+2. The pages must be 100% responsive
+3. Stick to the design and don't replace UI
+4. You are to host a netlify or github page of what you did and attach when sending a PR
+5. Your PR must be aproved before your task is considered completed
