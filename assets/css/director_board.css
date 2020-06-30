@@ -113,8 +113,6 @@ h6{
     font-size: 14px;
     line-height: 17px;
     font-weight: 600;
-    /* display: flex;
-    align-items: center; */
     letter-spacing: 0.05em;
     color: #005D3B;
 }
@@ -125,18 +123,21 @@ h6{
 }
 @media only screen and (max-width:768px){
 .hero-link{
-    font-size: 17px;
+    font-size: 18px;
     padding-left: 1rem;
 }
 .company-info{
     display: flex;
     flex-direction: column;
-    /* margin-top: none; */
+    padding-left: 1rem;
+}
+.berger-name{
+    padding-left: 1rem;
 }
 .company-info .info{
     margin-top: 2.5rem;
 }
 .board-link{
     font-size: 15px;
-}
+ }
 }
