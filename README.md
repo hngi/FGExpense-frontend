@@ -17,7 +17,7 @@ General Figma board -https://www.figma.com/file/MYsGV8NXtefVNUkrvdAhQX/ExpenseNG
 8. Commit changes - ```git commit -m 'commit message here'```
 9. Pull latest state from upstream again - ```git pull upstream develop```
 10. Push changes to your new branch - ```git push origin branch-name-here```
-11. Head to your forked repository and create a pull request
+11. Head to your forked repository and create a pull request to develop branch 
 
 ### Rules and guides
 
