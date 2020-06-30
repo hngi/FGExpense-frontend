@@ -14,7 +14,7 @@ body{
     color: #353A45;;
 }
 
-ul{
+#main ul{
     display: flex;
     list-style-type: none;
     padding-left: 0;
@@ -122,6 +122,13 @@ span > p{
     }
     .fa-ellipsis-h{
         font-size: 1.5rem;
+        display: none;
+    }
+}
+
+@media (max-width: 390px){
+    .fa-ellipsis-h{
+        display: none;
     }
 }
 
