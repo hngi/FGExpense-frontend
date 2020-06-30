@@ -26,9 +26,18 @@ body{
 }
 .content-1 ul li a{
   text-decoration: none;
-  font-size:20px;
+  font-size:17px;
   font-weight: bold;
   color: #00945E;
+}
+.content-1 .circle-1{
+  width:10px;
+  height:10px;
+  background-color:#00945E;
+  border-radius:flex;
+  border-radius:50%;
+ display:inline-block;
+ margin:0 1rem;
 }
 /*content-1 */
 
@@ -51,23 +60,20 @@ body{
 .money-spent .paragraph p{
   cursor:pointer;
   padding:0 2rem;
-}
-.money-spent .paragraph p:hover{
   color:#00945E;
 }
+
 .money-spent .paragraph:before{
   content:'';
   position:absolute;
   display: block;
-  width:0%;
-  top:100%;
+  width:50%;
+  top:98%;
   height: 3px;
   background-color:#00945E;
   transition:.5s ease;
 }
-.money-spent .paragraph:hover:before{
-  width:50%;
-}
+
 /*content-3 */
 
 /* last section with cards */
@@ -161,6 +167,16 @@ body{
     top:7%;
   }
 }
+@media only screen and (max-width:850px){
+  .sec-card .col{
+    flex:50%;
+  }
+}
+@media only screen and (max-width:500px){
+  .sec-card .col{
+    flex:100%;
+  }
+}
 
 @media only screen and (max-width:750px){
   .circle{
@@ -170,9 +186,22 @@ body{
   .vector{
     top:5%;
   }
+  
 }
 @media only screen and (max-width:400px){
   .main-header p{
     font-size:17px;
+  }
+  .content-1 .circle-1{
+    width:8px;
+    height:8px;
+    
+   margin:0 0.4rem;
+  }
+  
+  .content-1 ul li a{
+    
+    font-size:14px;
+    
   }
 }
