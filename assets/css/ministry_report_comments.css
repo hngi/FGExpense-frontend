@@ -44,7 +44,8 @@ p{
 
 .green-text,
 li.active > a,
-.far:hover{
+.far:hover,
+.far:focus{
     color: #00945e !important;
 }
 
@@ -124,8 +125,11 @@ span > p{
     }
 }
 
-@media (min-width: 768px) and (max-width:1024px){
-    .occupy{
-        flex-direction: row;
+@media (min-width: 576px) and (max-width:1023px){
+    .col-sm-1{
+        max-width: 15.3333%;
+    }
+    .col-sm-11{
+        max-width: 84.6667%;
     }
 }
