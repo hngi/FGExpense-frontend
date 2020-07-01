@@ -172,6 +172,9 @@ span > p{
         display: none !important;
     }
     .resize{
-        margin-top: -5rem;
+        margin-top: -3.4rem;
+    }
+    .reduce{
+        margin-top: -3rem;
     }
 }
