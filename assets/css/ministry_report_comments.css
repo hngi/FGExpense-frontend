@@ -41,9 +41,7 @@ p{
     font-size: 2rem;
 }
 
-.navigation-page{
-    overflow-x: scroll;
-}
+
 
 .green-text,
 li.active > a,
@@ -130,10 +128,21 @@ span > p{
     }
 }
 
-@media (max-width: 390px){
+@media (max-width: 500px){
     .fa-ellipsis-h{
         display: none;
     }
+    .navigation-page{
+        overflow-x: auto;
+    }
+}
+
+.navigation-page {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.navigation-page::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
 @media (min-width: 576px) and (max-width:1023px){
