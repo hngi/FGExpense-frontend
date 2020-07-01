@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+#main{
+    min-height: 90vh;
+    margin-top: 8em;
+}
+.breadcrumb{
+    background: none;
+    padding: .75rem 1rem .75rem 0;
+    font-weight: bold;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "\B7";
+}
+.breadcrumb li a, .breadcrumb-item.active {
+    color: #00945E;
+}
+#page-title{
+    margin-top: 2em;
+}
+#page-title h1{
+    font-weight: bold;
+}
+#page-title p{
+    margin-top: 2em;
+}
+.tab-link{
+    color: #A1A3A8;
+    border-bottom: 2px solid #A1A3A8;
+    padding-bottom: 1.6rem;   
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 1rem;
+}
+.tab-link:hover{
+    text-decoration: none;
+    color: #00945E;
+}
+.nav-tabs .active{
+    border-bottom: 2px solid #00945E;
+}
+.nav-tabs{
+    margin-top: 5rem;
+    padding-bottom: 1.5rem;
+}
