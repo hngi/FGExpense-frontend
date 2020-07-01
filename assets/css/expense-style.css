@@ -158,6 +158,36 @@ footer {
     font-weight: 100;
 }
 
+@media only screen and (max-width: 770px) {
+    .expense-tab {
+        font-size: .8em;
+        padding-bottom: 1px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .jumbotron ul li {
+        font-size: .75em;
+    }
+
+    .lead {
+        font-size: 1em;
+    }
+
+    .date {
+        font-size: .75em;
+    }
+
+    .btn-sm {
+        padding: 2px;
+        font-size: .75em;
+    }
+
+    .copyright-list {
+       font-size: .9em;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     .rotate-text {
         transform: rotate(-90deg);

@@ -47,18 +47,3 @@ function toggleBtn(){
 }
 
 calendarBtn.addEventListener('click', toggleBtn);
-/* ****************** End of Navbar **************** */
-
-/* *********** Date filtering ************* */
-// let calendar = document.querySelector('.calendar');
-// let calendarBtn = document.querySelector('.calendar-btn');
-
-// toggleBtn() = {
-//     if(calendar.classList.con) {
-//         calendar.classList.remove('d-none');
-//     } else {
-//         calendar.classList.add('d-none');
-//     }
-// }
-
-// calendarBtn.addEventListener('click', toggleBtn)
