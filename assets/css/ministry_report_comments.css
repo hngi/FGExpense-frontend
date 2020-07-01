@@ -153,3 +153,25 @@ span > p{
         max-width: 84.6667%;
     }
 }
+
+
+@media (max-width: 576px) {
+    .no-show{
+        display: none !important;
+    }
+    .resize{
+        margin-left: 1rem;
+    }
+    .reduce{
+        margin-left: .5rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .be-gone{
+        display: none !important;
+    }
+    .resize{
+        margin-top: -5rem;
+    }
+}
