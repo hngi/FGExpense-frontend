@@ -17,10 +17,11 @@ section{
 	width: 100%;
 	font-family: lato;
 	height: auto;
+	display: grid;
 }
 /*-----------------page summary section--------------------*/
 .page_summary_body{
-	padding: 50px 0px; 
+	padding: 10px 0px 50px 0px; 
 }
 .page_indicator{
 	font-style: normal;
