@@ -1,4 +1,4 @@
-.back{ 
+.back{
 	margin-right: -20px;
 }
 .sart{
@@ -6,6 +6,9 @@
 }
 .nav-link{
 	color: black !important;
+}
+.nav-item , .search{
+	background-color: #ffff !important;
 }
 .nav-link:hover{
 	color: grey !important;
@@ -36,5 +39,5 @@ h6{
 .lower{
 	background-color: #1F2430;
 	padding: 10px;
-	background: 
+	background:
 }
