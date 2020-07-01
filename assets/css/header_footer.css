@@ -4,6 +4,9 @@
 .nav-link:hover{
 	color: grey !important;
 }
+.navbar{
+	background-color: #ffff !important;
+}
 .my-footer ul {
   list-style-type: none;
   padding-left: 0;
@@ -30,5 +33,4 @@ h6{
 .lower{
 	background-color: #1F2430;
 	padding: 10px;
-	background: 
 }
