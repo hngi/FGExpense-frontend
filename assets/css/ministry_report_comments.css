@@ -41,6 +41,9 @@ p{
     font-size: 2rem;
 }
 
+.navigation-page{
+    overflow-x: scroll;
+}
 
 .green-text,
 li.active > a,
@@ -121,9 +124,6 @@ span > p{
 }
 
 @media (max-width: 500px){
-    .gone{
-        display: none;
-    }
     .fa-ellipsis-h{
         font-size: 1.5rem;
         display: none;
