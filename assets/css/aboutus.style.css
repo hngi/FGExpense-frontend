@@ -10,6 +10,10 @@ body,html{
 }
 
 
+.back{
+	margin-right: -20px;
+}
+
 :root{
   --textxolor: #353A45;
   --lightgray: #BCBDC1
@@ -25,7 +29,6 @@ main{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 1440px;
 }
 
 .hero{
