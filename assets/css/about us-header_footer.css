@@ -1,11 +1,17 @@
+.back{
+	margin-right: -20px;
+}
+.sart{
+	margin-right: px;
+}
 .nav-link{
 	color: black !important;
 }
+.nav-item , .search{
+	background-color: #ffff !important;
+}
 .nav-link:hover{
 	color: grey !important;
-}
-.navbar{
-	background-color: #ffff !important;
 }
 .my-footer ul {
   list-style-type: none;
@@ -33,4 +39,5 @@ h6{
 .lower{
 	background-color: #1F2430;
 	padding: 10px;
+	background:
 }
