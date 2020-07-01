@@ -20,7 +20,7 @@
   </head>
   <body>
       <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-default fixed">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img width="200" src="./assets/img/header-logo.PNG" alt="">
@@ -57,7 +57,7 @@
    <!-- Jumbotron-->
    <div class="jumbotron">
         <div class="container">
-            <div>
+            <div class="mt-5 pt-5">
                 <ul class="jumbo-list d-flex">
                     <li class="pr-5">HOME</li>
                     <li class="pr-5">SPENDING</li>
@@ -77,59 +77,224 @@
 
    <section id="Report-section">
        <div class="container">
-            <div class="d-flex mb-5">
-                <div class="expense-tab mr-auto pb-2">Daily Expense</div>
-                <div class="expense-tab mr-auto">Power</div>
-                <div class="expense-tab mr-auto">Education</div>
-                <div class="expense-tab mr-auto">Security</div>
-                <div class="expense-tab mr-auto">Agriculture</div>
-                <div class="expense-tab mr-auto">Infrastructure</div>
-                <div class="expense-tab mr-auto">Comments</div>
-            </div>
-            <div class="btn-group">
-                <button style="color: #005938; border-bottom: 1px solid #005938; font-size: 1.5em;" type="button" class="btn pl-0 pr-5 pb-0">Chart</button>
-                <button style="color: #005938; border-bottom: 1px solid #005938" type="button" class="btn pb-0 dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
+            <div class="tabs">
+                <div class="tab-sidebar d-none d-md-flex">
+                    <span class="tabs-button pb-2" data-for-tab="1">Daily Expense</span>
+                    <span class="tabs-button" data-for-tab="2">Power</span>
+                    <span class="tabs-button" data-for-tab="3">Education</span>
+                    <span class="tabs-button" data-for-tab="4">Security</span>
+                    <span class="tabs-button" data-for-tab="5">Agriculture</span>
+                    <span class="tabs-button" data-for-tab="6">Infrastructure</span>
+                    <span class="tabs-button" data-for-tab="7">Comments</span>
+                </div>
+
+                <div class="dropdown d-block d-md-none my-0">
+                    <button class="btn sector-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Select a sectors
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <span class="dropdown-item" data-for-tab="1">Daily Expense</span>
+                        <span class="dropdown-item" data-for-tab="2">Power</span>
+                        <span class="dropdown-item" data-for-tab="3">Education</span>
+                        <span class="dropdown-item" data-for-tab="4">Security</span>
+                        <span class="dropdown-item" data-for-tab="5">Agriculture</span>
+                        <span class="dropdown-item" data-for-tab="6">Infrastructure</span>
+                        <span class="dropdown-item" data-for-tab="7">Comments</span>
+                    </div>
+                </div>
+            
+                <div class="tabs-content" data-tab="1">
+                    <div class="row my-3">
+                        <div class="col-md-10 mx-auto d-flex">
+                            <div class="date mr-auto">Graph (Daily) : <span id="myDate"></span> 12 Jan, 2019</div>
+                            <div>
+                                <button style="background: #005938; color: #ffffff;" class="btn btn-sm calendar-btn">Select Date <i class="fas fa-filter"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 my-0 ml-auto">
+                            <input class="calendar d-none" type="date" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8 mx-auto">
+                            <div class="ministry-stat">
+                                <div class="graph-cont">
+                                    <img src="./assets/img/indicator.png" alt="graph">
+                                    <img class="graph-border" src="./assets/img/graph-bg.png" alt="graph">
+                                </div>
+                                <p class="text-center pt-3">Expenditure</p>
+                                <p class="rotate-text">Amount Spent (Billion)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-content" data-tab="2">
+                    <div class="row my-3">
+                        <div class="col-md-10 mx-auto d-flex">
+                            <div class="date mr-auto">Graph (Daily) : <span id="myDate"></span> 12 Jan, 2019</div>
+                            <div>
+                                <button style="background: #005938; color: #ffffff;" class="btn btn-sm calendar-btn">Select Date <i class="fas fa-filter"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 my-0 ml-auto">
+                            <input class="calendar d-none" type="date" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8 mx-auto">
+                            <div class="ministry-stat">
+                                <div class="graph-cont">
+                                    <img src="./assets/img/indicator.png" alt="graph">
+                                    <img class="graph-border" src="./assets/img/graph-bg.png" alt="graph">
+                                </div>
+                                <p class="text-center pt-3">Expenditure</p>
+                                <p class="rotate-text">Amount Spent (Billion)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-content" data-tab="3">
+                    <div class="row my-3">
+                        <div class="col-md-10 mx-auto d-flex">
+                            <div class="date mr-auto">Graph (Daily) : <span id="myDate"></span> 12 Jan, 2019</div>
+                            <div>
+                                <button style="background: #005938; color: #ffffff;" class="btn btn-sm calendar-btn">Select Date <i class="fas fa-filter"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 my-0 ml-auto">
+                            <input class="calendar d-none" type="date" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8 mx-auto">
+                            <div class="ministry-stat">
+                                <div class="graph-cont">
+                                    <img src="./assets/img/indicator.png" alt="graph">
+                                    <img class="graph-border" src="./assets/img/graph-bg.png" alt="graph">
+                                </div>
+                                <p class="text-center pt-3">Expenditure</p>
+                                <p class="rotate-text">Amount Spent (Billion)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="tabs-content" data-tab="4">
+                    <div class="row my-3">
+                        <div class="col-md-10 mx-auto d-flex">
+                            <div class="date mr-auto">Graph (Daily) : <span id="myDate"></span> 12 Jan, 2019</div>
+                            <div>
+                                <button style="background: #005938; color: #ffffff;" class="btn btn-sm calendar-btn">Select Date <i class="fas fa-filter"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 my-0 ml-auto">
+                            <input class="calendar d-none" type="date" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8 mx-auto">
+                            <div class="ministry-stat">
+                                <div class="graph-cont">
+                                    <img src="./assets/img/indicator.png" alt="graph">
+                                    <img class="graph-border" src="./assets/img/graph-bg.png" alt="graph">
+                                </div>
+                                <p class="text-center pt-3">Expenditure</p>
+                                <p class="rotate-text">Amount Spent (Billion)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-content" data-tab="5">
+                    <div class="row my-3">
+                        <div class="col-md-10 mx-auto d-flex">
+                            <div class="date mr-auto">Graph (Daily) : <span id="myDate"></span> 12 Jan, 2019</div>
+                            <div>
+                                <button style="background: #005938; color: #ffffff;" class="btn btn-sm calendar-btn">Select Date <i class="fas fa-filter"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 my-0 ml-auto">
+                            <input class="calendar d-none" type="date" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8 mx-auto">
+                            <div class="ministry-stat">
+                                <div class="graph-cont">
+                                    <img src="./assets/img/indicator.png" alt="graph">
+                                    <img class="graph-border" src="./assets/img/graph-bg.png" alt="graph">
+                                </div>
+                                <p class="text-center pt-3">Expenditure</p>
+                                <p class="rotate-text">Amount Spent (Billion)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="tabs-content" data-tab="6">
+                    <div class="row my-3">
+                        <div class="col-md-10 mx-auto d-flex">
+                            <div class="date mr-auto">Graph (Daily) : <span id="myDate"></span> 12 Jan, 2019</div>
+                            <div>
+                                <button style="background: #005938; color: #ffffff;" class="btn btn-sm calendar-btn">Select Date <i class="fas fa-filter"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 my-0 ml-auto">
+                            <input class="calendar d-none" type="date" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8 mx-auto">
+                            <div class="ministry-stat">
+                                <div class="graph-cont">
+                                    <img src="./assets/img/indicator.png" alt="graph">
+                                    <img class="graph-border" src="./assets/img/graph-bg.png" alt="graph">
+                                </div>
+                                <p class="text-center pt-3">Expenditure</p>
+                                <p class="rotate-text">Amount Spent (Billion)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-content" data-tab="7">
+                    <div class="row my-3">
+                        <div class="col-md-10 mx-auto d-flex">
+                            <div class="date mr-auto">Graph (Daily) : <span id="myDate"></span> 12 Jan, 2019</div>
+                            <div>
+                                <button style="background: #005938; color: #ffffff;" class="btn btn-sm calendar-btn">Select Date <i class="fas fa-filter"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 my-0 ml-auto">
+                            <input class="calendar d-none" type="date" name="" id="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8 mx-auto">
+                            <div class="ministry-stat">
+                                <div class="graph-cont">
+                                    <img src="./assets/img/indicator.png" alt="graph">
+                                    <img class="graph-border" src="./assets/img/graph-bg.png" alt="graph">
+                                </div>
+                                <p class="text-center pt-3">Expenditure</p>
+                                <p class="rotate-text">Amount Spent (Billion)</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row my-5">
-                    <div class="col-md-10 mx-auto d-flex">
-                        <div class="date mr-auto">Graph (Daily) : 12 May, 2019</div>
-                        <div><button style="background: #005938; color: #ffffff;" class="btn btn-sm">Select Date <i class="fas fa-filter"></i></button></div>
-                    </div>
-                    <div class="col-md-8 my-5 mx-auto chart px-2">
-                        <img class="chart-stop" src="./assets/img/stop.png" alt="">
-                        <img class="chart-indicator" src="./assets/img/indicator.png" alt="">
-                        <img class="chart-bg" src="./assets/img/graph-bg.png" alt="">
-                        <div>
-                            <ul class="chart-list">
-                                <li class="pb-2">10</li>
-                                <li class="pb-2">9</li>
-                                <li class="pb-2">8</li>
-                                <li class="pb-2">7</li>
-                                <li class="pb-2">6</li>
-                                <li class="pb-2">5</li>
-                                <li class="pb-2">4</li>
-                                <li class="pb-2">3</li>
-                                <li class="pb-2">2</li>
-                                <li class="pb-2">1</li>
-                            </ul>
-                        </div>
-                        <p class="y-axis">Amount Spent (Billion)</p>
-                        <p class="x-axis">Expenditure</p>
-                    </div>
-            </div>
-       </div>
+        </div>
    </section>
-
    <!-- <section class="my-5">
        <div class="container">
            <div class="col-md-8 mx-auto chart-2 mb-5 my-5">
@@ -139,7 +304,7 @@
    </section> -->
 
    <!-- Footer -->
-<footer class="page-footer font-small pt-2">
+<footer class="page-footer font-small pt-2 mt-5">
 
     <!-- Footer Links -->
     <div class="container text-center text-md-left">
@@ -148,16 +313,16 @@
       <div class="row mt-3">
   
         <!-- Grid column -->
-        <div class="col-md-6 mx-auto">
+        <div class="col-md-6 mx-auto mb-3">
   
           <!-- Links -->
             <h5 class="mb-2"><img width="200" src="./assets/img/footer-logo.PNG" alt=""></h5>
-            <p class="twitter"><i class="fab fa-twitter"></i> @expenseng</p>
+            <p class="twitter"><i class="fab fa-twitter pr-1"></i> @expenseng</p>
   
         </div>
 
         <!-- Grid column -->
-        <div class="col-md-2 mx-auto">
+        <div class="col-md-2 mx-auto mb-3">
   
             <h5 class="mb-2">Pages</h5>
 
@@ -175,7 +340,7 @@
   
         </div>
         <!-- Grid column -->
-        <div class="col-md-2 mx-auto">
+        <div class="col-md-2 mx-auto mb-3">
   
             <h5 class="mb-2">Spending</h5>
 
@@ -192,7 +357,7 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-2 mx-auto">
+        <div class="col-md-2 mx-auto mb-3">
   
             <h5 class="mb-2">About Us</h5>
 
@@ -239,5 +404,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <!--Custom js-->
+    <script src="./assets/js/expense-graph.js"></script>
 </body>
 </html>
