@@ -65,13 +65,14 @@ text-decoration: none;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-a{
-	text-decoration: underline;
-}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 	width: 100%;
+}
+table a {
+	text-decoration: underline;
 }
 
 th,
