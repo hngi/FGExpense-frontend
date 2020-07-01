@@ -3,6 +3,13 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+a,
+a:hover,
+a:active{
+	text-decoration: none;
+	color: #00945E;
+}
 /* breadcrumb */
 .breadcrumb-item + .breadcrumb-item::before {
   content: ".";
