@@ -6,7 +6,8 @@
 }
 #main{
     min-height: 90vh;
-    margin-top: 8em;
+    margin-top: 6em;
+    margin-bottom: 20em;
 }
 .breadcrumb{
     background: none;
@@ -19,13 +20,13 @@
 .breadcrumb li a, .breadcrumb-item.active {
     color: #00945E;
 }
-#page-title{
+#page-summary{
     margin-top: 2em;
 }
-#page-title h1{
+#page-summary h1{
     font-weight: bold;
 }
-#page-title p{
+#page-summary p{
     margin-top: 2em;
 }
 .tab-link{
@@ -34,7 +35,7 @@
     padding-bottom: 1.6rem;   
     padding-left: 1rem;
     padding-right: 1rem;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 .tab-link:hover{
     text-decoration: none;
@@ -47,6 +48,7 @@
 .nav-tabs{
     margin-top: 5rem;
     padding-bottom: 1.5rem;
+    margin-bottom: 5rem;
 }
 .card {
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 4px 8px rgba(0, 0, 0, 0.04);
@@ -70,6 +72,15 @@
     margin-right: 5rem;
 }
 
+@media  (max-width: 992px){
+    .nav-tabs{
+        white-space: nowrap;
+        position: relative;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+}
 
 @media (max-width: 768px){
     .paragraph{
@@ -93,14 +104,6 @@
     }
 }
 
-.navigation-page {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-}
-.navigation-page::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
-
 @media (min-width: 576px) and (max-width:1023px){
     .col-sm-1{
         max-width: 15.3333%;
@@ -120,6 +123,21 @@
     }
     .reduce{
         margin-left: .5rem;
+    }
+    .nav-tabs{
+        white-space: nowrap;
+        position: relative;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+    #main{
+        margin-top: 4em;
+        margin-bottom: 20em;
+    }
+    #page-summary p{
+        width: 75%;
+
     }
 }
 
