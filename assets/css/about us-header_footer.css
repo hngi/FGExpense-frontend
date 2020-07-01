@@ -7,6 +7,9 @@
 .nav-link{
 	color: black !important;
 }
+.nav-item , .search{
+	background-color: #ffff !important;
+}
 .nav-link:hover{
 	color: grey !important;
 }
