@@ -17,7 +17,7 @@ section{
 	width: 100%;
 	font-family: lato;
 	height: auto;
-	display: grid;
+	display: inline-block;
 }
 /*-----------------page summary section--------------------*/
 .page_summary_body{
