@@ -22,8 +22,9 @@
   display: inline;
 }
 .top-nav a {
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   border-bottom: 2px solid #000;
+  text-decoration: none;
 }
 
 .active {
@@ -82,4 +83,42 @@ select {
             .ministry-stat{
                 flex-direction: row;
             }
+
+
+            .top-nav li {
+              padding: 20px 40px 20px 0;
+              text-align: center;
+            
+            
+              display: inline;
+            }
+            
+            
+            
+            .top-nav a {
+              padding-bottom: 20px;
+              border-bottom: 2px solid #0000
+            }
+            
         }
+
+
+        @media only screen and (max-width: 600px) {
+          .top-nav li {
+            padding: 20px 40px 20px 0;
+            text-align: center;
+          
+          
+            display: block;
+          }
+          
+          
+          
+          .top-nav a {
+            padding-bottom: 20px;
+            border-bottom: 2px solid #000
+          }
+          
+
+        }
+      
