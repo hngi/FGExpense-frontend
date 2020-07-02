@@ -10,8 +10,9 @@
 .my-footer ul {
   list-style-type: none;
   padding-left: 0;
-  color: white;
-}.my-footer a {
+  color: white !important;
+}
+.my-footer .link small{
   color: #fff !important;
 }
 .my-footer {
