@@ -107,7 +107,7 @@ small{
     text-decoration: none;
 }
 
-.second-section .first-part .link:focus, .second-section .first-part .link:hover::after {
+.second-section .first-part .link:focus::after, .second-section .first-part .link:hover::after {
     background: #00945E;
 }
 
