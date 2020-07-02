@@ -21,7 +21,7 @@ let chart1 = new Chart(ctx1, {
             lineTension:0,
             data: [10, 40, 30, 45, 31, 30, 47, 40, 35, 50],
             borderColor: '#00945E',
-            borderWidth: 1,
+            borderWidth: 2,
             label: ''
         }]
     },
@@ -76,7 +76,7 @@ let chart2 = new Chart(ctx2, {
             lineTension:0,
             data: [10, 40, 30, 45, 31, 30, 47, 40, 35, 50],
             borderColor: '#00945E',
-            borderWidth: 1,
+            borderWidth: 2,
             label: ''
         }]
     },
@@ -131,7 +131,7 @@ let chart3 = new Chart(ctx3, {
             lineTension:0,
             data: [10, 40, 30, 45, 31, 30, 47, 40, 35, 50,49,45],
             borderColor: '#00945E',
-            borderWidth: 1,
+            borderWidth: 2,
             label: ''
         }]
     },
@@ -146,7 +146,7 @@ let chart3 = new Chart(ctx3, {
             ticks: {
                 fontSize: 15,
                 fontColor: "black",
-            },
+            }
         }],
         yAxes: [{
             gridLines: {
@@ -179,3 +179,37 @@ chart_table.addEventListener("change", function() {
         document.querySelector('.chart_body').style.display = "block";
     }
 });
+const input_comment = document.querySelector('.send_comment_body input');
+const send_comment = () =>{
+    const input_comment = document.querySelector('.send_comment_body input');
+    const message_holder = document.querySelector('.message-holder');
+    if(input_comment.value != ''){
+       const comment_body = document.createElement('div');
+            comment_body.className = 'comment_body';
+            comment_body.innerHTML = `<div class="comment_container">
+            <div class="profile_pix_container"><img src="../assets/img/Rectangle320.png"></div>
+            <div class="comment_details">
+              <h5>James Emmanuel <span>2mins ago</span></h5>
+              <h6>${input_comment.value}</h6>
+              <a><i class="fa fa-thumbs-up"></i> 23</a>
+              <a><i class="fa fa-thumbs-down"></i> 0</a>
+              <a><i class="fa fa-comment-dots"></i> Reply</a>
+            </div>
+            <a class="comment_menu">...</a>
+          </div>`;
+            let send_comment_body = document.querySelector('.send_comment_body'); 
+            document.querySelector('.comment_section').insertBefore(comment_body, document.querySelector('.comment_section').lastElementChild);
+            //.append(comment_body);  
+            input_comment.value = '';
+        }
+}
+
+input_comment.addEventListener("keyup", function(event) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+
+    if (event.keyCode === 13) {
+      // Trigger the button element
+      send_comment();
+    }
+  });

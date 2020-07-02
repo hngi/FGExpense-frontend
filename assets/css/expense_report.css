@@ -141,6 +141,7 @@ section{
 	float: left;
 	width: 75%;
 	margin-left: 8px;
+	overflow: hidden;
 }
 .comment_menu{
 	float: right;
@@ -159,12 +160,38 @@ section{
 .comment_details h6{
 	margin-bottom: 20px;
 	color: #353A45;
+	word-break: break-all;
 }
 .comment_details a{
 	margin-left: 12px;
 	color: #62666E;
 	cursor: pointer;
 	margin-top: 30px;
+}
+.send_comment_body{
+	width: 100%;
+	height: 50px;
+	border: 1px solid #E5E5E5;
+}
+.send_comment_body input{
+	width: 80%;
+	height: 100%;
+	float: left;
+	border: none;
+	outline: none;
+	color: #000000;
+	padding-left: 10px;
+}
+.send_comment_body .fa-smile, .send_comment_body .fa-image{
+	float: right;
+	font-size: 20px;
+	color: #dddddd;
+	margin-right: 7px;
+	margin-top: 12px;
+	cursor: pointer;
+}
+.send_comment_body .fa-smile:hover, .send_comment_body .fa-image:hover{
+	color: #000000;
 }
 /*-----------------------table section----------------------*/
 .year_table{
@@ -317,14 +344,15 @@ section{
 	display: none;
 }
 .graph_date_body{
-	padding: 40px 0px 40px 0px;
-	width: 700px;
+	padding: 40px 0px 30px 0px;
+	width: 90%;
 }
 .graph_date_body h6{
 	float: left;
 	font-size: 18px;
 	font-weight: bold;
 	color: #323E48;
+	margin-top: 20px;
 }
 .graph_date_body a{
 	float: right;
@@ -334,15 +362,18 @@ section{
 	font-size: 14px;
 	border-radius: 5px;
 	cursor: pointer;
+	margin-top: 10px;
 }
 .graph_container{
 	width: 90%;
-	height: 350px;
-	margin: 40px 0px;
+	margin: 25px 0px;
+	box-shadow: -1px 0px 2px rgba(0, 0, 0, 0.1), 1px 2px 2px rgba(0, 0, 0, 0.1);
+	padding-top: 40px;
 }
 #graph_canvas1,#graph_canvas2,#graph_canvas3{
-	width: 100% !important;
-	height: 100% !important;
+	width: 90% !important;
+	height: 90% !important;
+	margin: auto !important;
 }
 /*------Responsiveneness at max width 1280px------*/
 @media (max-width: 1280px){
@@ -350,7 +381,7 @@ section{
 		width: 100%;
 	}
 	.graph_date_body{
-		width: 100%;
+		width: 90%;
 	}
 	.year_table{
 		width: 100%;
@@ -427,12 +458,15 @@ section{
 		font-size: 14px;
 	}
 	.graph_date_body a{
-		padding: 5px 8px;
+		padding: 4px 5px;
 		font-size: 12px;
+		margin-top: 15px;
 	}
 	.graph_container{
-		height: 200px;
-		margin: 15px 0px;
+		margin: 15px auto;
+	}
+	.graph_date_body{
+		margin: auto;
 	}
 }
 @media (max-width: 400px){
@@ -443,7 +477,7 @@ section{
 		padding: 30px 0px;
 	}
 	.page_summary_body h5,.ministry_links a{
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 	.page_summary_body h2{
 		font-size: 1.7rem;
@@ -466,7 +500,7 @@ section{
 		height: 40px;
 	}
 	.daily_table1 tr td,.daily_table2 tr td,.monthly_table1 tr td,.monthly_table2 tr td,.yearly_table1 tr td,.yearly_table2 tr td{
-		font-size: 14px;
+		font-size: 15px;
 		height: 40px;
 	}
 	.prev_next_body .div1, .prev_next_body .div2,.year_change_body .div1,.year_change_body .div2{
@@ -499,7 +533,15 @@ section{
 		font-size: 20px;
 	}
 	.graph_container{
-		height: 150px;
 		margin: 4px 0px;
+	}
+	.graph_date_body {
+		margin:0px;
+	}
+	.graph_date_body h6{
+		margin-top: 10px;
+	}
+	.graph_date_body a{
+		margin-top: 0px;
 	}
 }
