@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+
+    <style>
+        div.graph-cont{
+                position: relative;
+            
+            }
+            div.graph-cont img{
+                width: 100%;
+                padding: 0 0 0 10px;
+            }
+            
+            .graph-border {
+                border-bottom: 2px solid black;
+                border-left: 2px solid black;
+            }
+            
+            div.graph-cont img:nth-child(1){
+                position: absolute;
+            }
+            
+            .ministry-stat{
+                padding: 1.5rem;
+                min-height: 350px;
+            }
+
+            @media only screen and (min-width: 910px) {
+                .ministry-stat{
+                    flex-direction: row;
+                }
+            }
+            
+    </style>
+    <title>FGN Expense</title>
+  </head>
+  <body>
+   
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <div class="ministry-stat">
+                                <div class="graph-cont">
+                                    <img src="./indicator.png" alt="graph">
+                                    <img class="graph-border" src="./graph-bg.png" alt="graph">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+               
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <!--Custom js-->
+    <script src="./assets/js/expense-graph.js"></script>
+</body>
+</html>
